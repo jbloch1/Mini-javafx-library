@@ -1,0 +1,15 @@
+AfiveQone is the UML diagram. I couldn't get to size right in the pdf, but the png is fine.
+
+Decorator pattern has been used extensivley here to implement the shapes atop Swing. I used good object oriented design to inherit all the elemnts from Swing, changing only the contents that has to do with the theme.
+
+actionlistener patern has been implemented by ButtonClickListener as an inherited type. 
+
+Strategy pattern has been implemented by setting the layout of the root panel to new GridLayout() for both themes.
+
+Composite pattern has been used as well for the interfaces for the Cool303Theme. 
+
+Used a Strategy/Inheritance pattern with JComponents inhereted Cool303Components.
+
+Abstact class Cool303Button which has instances Cool303SummerButton and Cool303PastelButton. Used the abstact factory design pattern to manufacture either summer buttons or pastel buttons, and other design elements. In this way, the functions to do with painting and stuff have been done default by Swing, and the only function that overrides it is JavaCool303RoundButton.
+
+Observer design pattern is appliable here, overall. The Observer is the Cool303Theme, the Subject is the classes that implement the Cool303 items. The client is the responsibiliy of the Cool303 user. In this case it's my app that displays buttons.
